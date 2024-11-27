@@ -1,0 +1,67 @@
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+    background: teal;
+  }
+  
+  h1 {
+    color:teal;
+    text-decoration: dotted;
+    margin-bottom: 20px;
+  }
+  
+  .job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .job-card {
+    background:lightblue;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-card h3 {
+    margin: 0;
+    color: #3D1C02;
+  }
+  
+  .job-card p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .apply-button {
+    display: contents;
+    padding: 10px 20px;
+    background-color: #3D1C02;
+    color:#3D1C02;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.apply-button:hover {
+    background-color:black;
+}
+
+.send-email-button {
+    position: absolute; /* Use absolute positioning */
+    top: 60px; /* Distance from the top of the container/page */
+    left: 750px; /* Distance from the left of the container/page */
+    padding: 1px 1px; /* Smaller padding to reduce size */
+    background-color:teal;
+    color:aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px; /* Smaller font size */
+    z-index: 10; /* Ensures the button is above other elements */
+}
+
+.send-email-button:hover {
+    background-color:teal; /* Darker color on hover */
+}

@@ -1,0 +1,444 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:linear-gradient(to bottom right, #db5050, #bdbdbd);;
+  }
+  
+  /* Main container for registration */
+  .registration-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left:30px;
+    min-height: 100vh;
+    background-color:white;
+    padding: 5px;
+  }
+  
+  /* Image section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background:white;
+    margin-left:20px;
+    justify-content: center;
+    max-width: 35%;
+  }
+  
+  .side-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Form section */
+  .form-section {
+    flex: 1;
+    max-width: 450px;
+    background-color:#740433;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #regtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align: center;
+    color:white;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  #btnreg {
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    align-items:center;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #btnreg:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Messages */
+  p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  p[style="color: red;"] {
+    font-weight: bold;
+  }
+  
+  p[style="color: green;"] {
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .registration-container {
+      flex-direction: column;
+    }
+  
+    .image-section {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .form-section {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+  
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:indianred;
+}
+
+/* Container for the Registration page */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:2px;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:280px;
+    padding: 20px;
+}
+
+.side-image {
+    width: 200%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the space */
+    max-width: 550px; /* Maximum width to keep the image responsive */
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    max-width: 600px;
+    background-color:indianred;
+    padding: 2px;
+    margin-right:330px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Registration Header */
+#regtitle {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Inputs and Labels */
+label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Signup Button */
+#btnreg {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    margin-left:170px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#btnreg:hover {
+    background-color: #0056b3;
+}
+
+/* Error and Success Messages */
+p {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+p.error {
+    color: red;
+}
+
+p.success {
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .registration-container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-section {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .side-image {
+        max-width: 100%; /* Ensure the image scales on smaller screens */
+    }
+}
+
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:indigo;
+}
+
+/* Container for the login page */
+.container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to bottom right, #52042f, #bdbdbd);
+    min-height: 100vh;
+    padding:20px;
+}
+
+/* Back to Home Button */
+.back-button {
+    align-self: flex-start;
+    margin-bottom: 120px;
+    padding: 10px 15px;
+    margin-left: 890px;
+    font-size: 14px;
+    color: white;
+    background-color: indigo;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensure equal height */
+    justify-content: space-between; /* Align the content properly */
+    background-color:indianred;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow:auto;
+    max-width:1000px;
+    width:390%;
+}
+
+/* Login Image Section */
+.loginimage {
+    flex: 1; /* Make it take equal space with the form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #740433, #bdbdbd);
+    padding: 70px;
+}
+
+/* Make the image fill its container */
+.login-image {
+    width:540%;
+    height: auto;
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+/* Login Form Section */
+.login-form-container {
+    flex: 1; /* Make it take equal space with the image */
+    padding: 70px;
+    text-align: center;
+    background-color:#740433;
+    margin-left: 1px;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Login Header */
+.login-header {
+    margin-bottom: 30px;
+}
+
+#lg {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input Fields */
+input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Login Button */
+#lgn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color:palevioletred;
+    margin-left:5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#lgn:hover {
+    background-color: #0056b3;
+}
+
+/* Register Link */
+.dont {
+    margin-top: 10px;
+}
+
+#dha {
+    font-size: 0.9rem;
+    color:plum;
+}
+
+#dha a {
+    color:white;
+    text-decoration: none;
+}
+
+#dha a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: auto;
+    }
+
+    .loginimage {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .login-form-container {
+        max-width: 100%;
+    }
+}

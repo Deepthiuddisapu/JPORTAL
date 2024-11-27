@@ -1,0 +1,166 @@
+/* General styling for the application container */
+.appcontainer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color:indianred;
+    border-radius: 8px;
+    box-shadow: 20 4px 8px white(219, 33, 33);
+}
+
+/* Styling for the header */
+h1 {
+    font-size: 36px;
+    color:black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styling for each section header */
+h2 {
+    font-size: 30px;
+    color:white;
+    margin-bottom: 10px;
+}
+
+/* Styling for input fields and labels */
+label {
+    font-size: 16px;
+    color:black;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Styling for the input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color:black;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #3D1C02;
+    outline: none;
+}
+
+/* Specific styling for each section */
+.personal-details-container,
+.qualification-container,
+.address-container,
+.skills-container {
+    margin-bottom: 40px;
+}
+
+/* Flexbox layout for form sections */
+.personal-details-container,
+.qualification-container,
+.address-container,
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.personal-details-container > div,
+.qualification-container > div,
+.address-container > div,
+.skills-container > div {
+    flex: 1;
+    min-width: 200px;
+    color:white;
+}
+
+/* Styling for select dropdown */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color:white;
+    color:black;
+}
+
+/* Styling for skill inputs */
+.skills-container .skill1,
+.skills-container .skill2,
+.skills-container .skill3 {
+    width: calc(70% - 12px);
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+/* Footer section of the application form */
+.footer-apply {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Styling for submit buttons (if any) */
+button {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    width:20%;
+    margin-left:380px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b1b01;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .appcontainer {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .personal-details-container,
+    .qualification-container,
+    .address-container,
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .personal-details-container > div,
+    .qualification-container > div,
+    .address-container > div,
+    .skills-container > div {
+        min-width: 100%;
+    }
+
+    .skills-container .skill1,
+    .skills-container .skill2,
+    .skills-container .skill3 {
+        width: 100%;
+        margin-right: 0;
+    }
+}

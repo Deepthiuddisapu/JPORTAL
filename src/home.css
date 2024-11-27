@@ -1,0 +1,423 @@
+/* home.css */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color:white !important;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 56px;
+}
+
+/* Header Section */
+.header {
+    background-color:#200214c7;/* Transparent black with 50% opacity */
+    padding: 10px 4px;
+    display: inline-flexbox;
+    justify-content: space-between; /* Ensures logo is on the left and buttons on the right */
+    align-items: center; /* Vertically center items in the header */
+    box-shadow: 0 2px 5px rgb(20, 5, 5); /* Slight shadow to give depth */
+    position: fixed;
+    top:0px;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+/* Header Section */
+.imgonly {
+    margin-top: 40px;
+    display: flex;
+    align-items:center;
+}
+
+/* Logo and title styling (Workfolio) */
+#workfolio {
+    font-size: 56px;
+    color:black !important; 
+    font-weight: bold;
+    margin-right:90px;
+    padding:0px;
+    left:5px;
+    display:inline-flexbox;
+    align-items:center;
+}
+
+#workfolio img {
+    height: 45px;
+    max-width: 180px;
+    margin-left:70px; /* Space between the image and text */
+}
+
+
+/* Button Styles */
+button {
+    border-radius: 40px;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:white;
+    color:white;
+}
+
+/* Sign In & Sign Up Buttons */
+.btnlog, .btnreg {
+    position: absolute;
+    top: 120px;
+    color:#3D1C02;
+    right: 0%;
+    display: flex; /* Make the buttons appear next to each other */
+    gap: 6px; /* Space between the buttons */
+}
+
+.btnlog {
+    position: absolute;
+    top: 127px;
+    right: 120px;
+    padding: 6px 12px; 
+    font-size: 14px; 
+    border-radius: 25px;
+    max-width: 120px;
+    z-index: 10;
+}
+
+.btnreg {
+    background-color:null;
+    color: white;
+    font-size: 16px;
+    padding: 12px 15px;
+    border-radius: 25px;
+    max-width: 150px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnlog:hover, .btnreg:hover {
+    background-color:white;
+    color: white;
+}
+
+#quote1 {
+    font-size: 24px; /* Set the font size */
+    color:purple; /* Set the text color */
+    font-family: Arial, sans-serif; /* Set the font family */
+    margin-top:150px;
+    margin-left:5px;
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Quote Section */
+.quotecontent {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+#quote {
+    font-size: 60px;
+    font-family: 'Perpetua', serif;
+    color:black;
+    text-align:left;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    margin-right:300px;
+}
+
+#quote2 {
+    font-size: 20px; 
+    color:black; 
+    font-weight: bold; 
+    line-height: 1.4; 
+    margin: 0; 
+    letter-spacing: 1px; 
+   margin-right:920px;
+}
+
+/* Image Section Styling */
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0; /* Add spacing above and below the image */
+    text-align: center;
+}
+
+/* Home Image Styling */
+.home-image {
+    width:1800px;           
+    max-width:1500px;      /* Limit the maximum width of the image */
+    height: auto;          /* Maintain the aspect ratio */
+    border-radius: 12px;   /* Optional: round the corners of the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visual appeal */
+    object-fit: cover;     /* Ensures the image covers the space without stretching */
+}
+
+.welcontent {
+    text-align: left;
+    padding: 20px;
+    background-color:transparent; /* Light background to highlight the section */
+    margin: 20px auto;
+    margin-left:5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Centered and constrained width */
+}
+
+#quote3 {
+    font-size: 28px; /* Size to make it stand out */
+    color: teal; /* Dark gray for readability */
+    font-weight: bold; /* Emphasize the text */
+    line-height: 1.4; /* Better spacing between lines */
+    margin: 0; /* Remove default margin */
+}
+
+/* Text Content */
+.rightcontent {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:#20283E;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(173, 16, 16, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.rightcontent h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color:white;
+}
+
+#right {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if they don't fit in one line */
+    justify-content: space-around; /* Adds space between items */
+    list-style-type: none;
+    width:90%;
+    padding: 0;
+}
+
+#right li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    flex: 1 1 30%; /* Adjust the basis to control item width */
+}
+
+.point1 {
+    color: #1d4ed8; /* Blue shade */
+}
+
+.point2 {
+    color: #10b981; /* Green shade */
+}
+
+.point3 {
+    color: #f59e0b; /* Orange shade */
+}
+
+/* Styling the image */
+img {
+    max-width: 300px;
+    width:400%;     
+    height: 30px;  
+    align-items:auto;         
+    display: block;         
+    margin: 0 auto;         
+    border-radius: 8px;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Get Started Button */
+.getstarted {
+    margin-top:40px;
+    margin-left:10%;
+}
+
+#get {
+    background-color: #3D1C02;
+    color: #CADCFC;
+    font-family: Oblique, sans-serif;
+    font-size: 22px;
+    width: 300%;
+    max-width: 310px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#get:hover {
+    background-color:black;
+    color: white;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 50px;
+    background-color: #363636;
+    padding:40px 80px;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  
+    display: inline-flexbox;
+    justify-content: space-between; /* Ensures logo is on the left and buttons on the right */
+    align-items: center; /* Vertically center items in the header */
+    box-shadow: 0 2px 5px rgb(243, 241, 241); /* Slight shadow to give depth */
+    top: 90px; /* Fix the header to the top of the page */
+    left: 0px;
+    right: 70px;
+    z-index: 1000; /* Ensure the header stays on top */
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-right:20px;
+}
+
+.footer .social-icons a {
+    margin-right: 40px;
+    color: white;
+    transition: color 0.3s ease;
+    font-size:20px;
+}
+
+.footer .social-icons a:hover {
+    color: #16a085;
+}
+
+#twitter {
+    fill: #1DA1F2;
+}
+
+#fb {
+    fill: white;
+    color: blue;
+}
+
+#linked {
+    fill: #0072b1;
+}
+
+/* Footer Links (About, Contact, Terms) */
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#btnabout, #btncontact, #btnterms {
+    width: 150px;
+    padding: 12px 0;
+    font-size: 16px;
+    background-color:black;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+#btnabout:hover, #btncontact:hover, #btnterms:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Copyright Text */
+.copyright {
+    margin-left: 1px;
+    font-size: 14px;
+}
+
+/* Footer Social Media Icons */
+.footer .social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 20px;
+    }
+
+    .btnlog, .btnreg {
+        margin-left: 50%;
+        margin-top: 10px;
+        transform: translateX(-50%);
+    }
+
+    .quotecontent {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #quote {
+        font-size: 40px;
+    }
+
+    .rightcontent {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    .getstarted {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .footer .footer-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .footer .social-icons {
+        margin-top: 20px;
+    }
+
+    #btnabout, #btncontact, #btnterms {
+        width: 130px;
+        font-size: 14px;
+        padding: 10px 0;
+        margin: 5px;
+    }
+
+    .company {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
