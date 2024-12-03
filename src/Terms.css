@@ -1,0 +1,60 @@
+/* TermsAndConditions.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+ul li {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
